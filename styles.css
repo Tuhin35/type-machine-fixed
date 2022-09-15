@@ -63,9 +63,9 @@ body {
   display: none;
 }
 #result {
-  position: fixed;
-  top: 10%; 
-  left: 10%;
+  position:absolute;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -75,6 +75,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+  
 }
 #show-time{
   text-align: center;
@@ -149,11 +150,13 @@ button {
 }
 
 .card {
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 250px;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -180,6 +183,7 @@ button {
   width: 100%;
   position: fixed;
   top: 0;
+ 
 }
 
 @media only screen and (max-width: 700px) {
@@ -188,6 +192,8 @@ button {
     width: 100%;
   }
   .card {
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
+    padding: 30px 30px;
   }
 }
